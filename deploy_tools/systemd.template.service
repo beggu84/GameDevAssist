@@ -1,0 +1,11 @@
+[Unit]
+Description=Gunicorn server for gamedevassist
+
+[Service]
+Restart=on-failure
+User=wooki
+WorkingDirectory=/home/wooki/sites/gamedevassist/source
+ExecStart=/home/wooki/sites/gamedevassist/virtualenv/bin/gunicorn --bind unix:/home/wooki/sites/gamedevassist/unix.sock main.wsgi:application
+
+[Install]
+WantedBy=multi-user.target

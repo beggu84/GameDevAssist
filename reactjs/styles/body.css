@@ -1,0 +1,32 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    /*box-sizing: border-box;*/
+}
+
+body {
+    /*
+    width: 1040px;
+    min-width: 1000px;
+    padding: 0;
+    */
+    margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.ms_scrollbar {
+    -ms-overflow-style: none;
+}
+
+#disqus_thread {
+    width: 1060px;
+    margin: 0 auto;
+}
